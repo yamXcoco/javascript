@@ -68,3 +68,41 @@ const fullName = firstName + lastName
 // const fullName = firstName + '' + lastName
 console.log(fullName)
 console.log(` ${fullName} ${lastName}`)
+
+// f12콘솔창에 출력
+// console.log(user)
+// console.log('hahaha')
+
+// const는 내용 안변함 전역변수
+// const myClass = {
+//   subject: 'html',
+//   date: '2022-12-13',
+// }
+// console.log(myClass)
+// console.log(myClass.date)
+// 호출시 이렇게 사용
+
+// const num = 100
+// const width = 10.5
+// console.log(`값은 ${num}이고, 타입은 ${typeof num}입니다.`)
+// 출력시 (값은 10이고 타입은 number입니다.)
+// $쓰는 이유? 보이는 대로 표시
+// const firstname = 'Jonh'
+// const lastName = 'snow'
+// const fullName = firstname + lastName
+// console.log(fullName)
+// console.log(`${firstname} ${lastName}`)
+
+// id= class랑 비슷 이걸 getElementById로 받아옴(jsmode)
+// .addEventListener로 동작(click)받기 그럼 function({
+
+// console.log(myClass)
+// console.log(myClass.date)
+// const mode = document.getElementById("jsmode");
+// mode.addEventListener("click", function() {
+//   if (mode.innerText === "바뀌기 전 text") {
+//     mode.innerText = "바뀐 text!";
+//   } else {
+//     mode.innerText = "바뀌기 전 text";
+//   }
+// });

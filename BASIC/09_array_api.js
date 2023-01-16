@@ -1,3 +1,5 @@
+// array_api
+
 const books = ['html', 'css', 'javascript'] //java
 //배열을 문자열로
 console.log(books)
@@ -17,49 +19,53 @@ console.log(books)
   const result = num.reverse()
   console.log(result)
 }
-//특정한 요소를 제거한 새로운 배열 만들기
 
+//특정한 요소를 제거한 새로운 배열 만들기
 {
   const numbers = [1, 3, 5, 7, 9]
-  //   const result = numbers.splice(2, 2)
+  const result = numbers.splice(1, 3) //1~3까지
   //   console.log(result)
   //   console.log(numbers)
-  const result = numbers.slice(2)
+  // const result = numbers.slice(2)//2까지 없애기
   console.log(result)
 }
-
 const sojus = [
-  { name: '대선', price: 1100, sale: true, score: 87 },
-  { name: '좋은데이', price: 1400, sale: false, score: 26 },
-  { name: '진로', price: 1350, sale: true, score: 94 },
-  { name: '참이슬', price: 1200, sale: false, score: 60 },
+  { name: '대선', price: 1200, sale: true, score: 86 },
+  { name: '좋은데이', price: 1100, sale: false, score: 92 },
+  { name: '진로', price: 1150, sale: true, score: 80 },
+  { name: '금복주', price: 960, sale: false, score: 60 },
+  { name: '참이슬', price: 1250, sale: true, score: 46 },
 ]
-
-// score가 87인 소주를찾기
+// 5, score가  80인 소주를 찾기
 {
-  const result = sojus.find((item) => item.score == 87)
+  const result = sojus.find((item) => item.score == 80)
   console.log(result)
 }
-//판매중인 소주를 찾아서 새로운 배열로 만들기
+
+// 6. 판매중인 소주를 찾아서 새로운 배열로 만들기
 {
   const result = sojus.filter((item) => item.sale)
   console.log(result)
 }
-//점수만 있는 새로운 배열 만들기
+
+// 7. 점수만 있는 새로운 배열 만들기
 {
   const result = sojus.map((item) => item.score)
   console.log(result)
 }
-//점수가 50보다 작은 소주가 있나
+
+// 8. 점수가 50보다 작은 소주가 있는지 확인하기
 {
   const result = sojus.some((item) => item.score < 50)
   console.log(result)
 }
-//소주들의 평균가격 확인
+
+// 9. 소주들의 평균 가격을 계산하기
 {
   const result = sojus.reduce((a, b) => {
     return a + b.price
   }, 0)
+
   console.log(result / sojus.length)
 }
 // 10. 점수가 낮은 순으로, 문자열로 정렬하기

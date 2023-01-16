@@ -1,5 +1,3 @@
-console.log('haha')
-
 //오브젝트
 //자바스크립트의 데이터 상태와 행동을 가짐
 // - phone의 상태 (properties) -> VideoColorSpace, size

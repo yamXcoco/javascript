@@ -90,3 +90,18 @@ console.log('' === false)
 console.log(null == undefined)
 console.log(null === undefined)
 console.log('\\\\\\\\\\\\')
+
+// const value1 = '100'
+// const value2 = 100
+// ++(전위 후위)
+// let count1 = 10
+// let count2 = count1++
+// console.log(count1, count2)
+// 나중에 증가되므로 const2 는 10
+
+// console.log(value1 == value2)
+// console.log(value1 === value2)
+// 내용이 같니?
+// type까지 같니?
+
+// console.clear()

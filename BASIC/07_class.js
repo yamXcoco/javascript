@@ -1,5 +1,10 @@
+// 탬플릿
 //class에는 데이터가 없음 한번만 선언
+
 //object
+// - class의 인스턴스
+// - 복수 생성이 가능하다
+// - 실제 데이타가 존재한다.
 class Car {
   constructor(name, color) {
     this.name = name
