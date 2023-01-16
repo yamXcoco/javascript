@@ -4,7 +4,7 @@ const color = document.getElementById('color')
 const bgBtn = document.getElementById('bgBtn')
 const hexBtn = document.getElementById('hexBtn')
 
-console.log(bg, hex, color, bgBtn, hexBtn)
+// console.log(bg, hex, color, bgBtn, hexBtn)
 
 function getBgNum() {
   return Math.floor(Math.random() * bg.length)
